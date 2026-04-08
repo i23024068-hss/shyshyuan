@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4WBYVD0HPC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4WBYVD0HPC');
+</script>
+    <link rel="icon" type="image/x-icon" href="image/jblogo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JB Explorer - About JB</title>
+    
+    <style>
+        
+        html, body {
+            height: 100%; 
+            margin: 0;
+            font-family: Arial, sans-serif;
+            cursor: none !important; 
+        }
+
+        body {
+            background-image: url('image/Jbview2.jpg');
+            background-size: cover;  
+            background-position: center; 
+            background-attachment: fixed; 
+            background-repeat: no-repeat;
+            background-color: #f4f4f4; 
+            display: flex;
+            flex-direction: column;
+        }
+
+        .site-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+            flex: 1;
+        }
+
+        .main-content {
+            flex: 1; 
+        }
+
+        
+        header {
+            background-color: #000080;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+
+        header h1 img {
+            width: 100px;
+            margin-right: 20px;
+        }
+
+        header h1 span {
+            color: #FF0004;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            position: relative;
+            color: aqua;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: none !important;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            left: 0; bottom: -5px;
+            width: 0; height: 2px;
+            background: white;
+            transition: 0.3s;
+        }
+
+        nav a:hover::after { width: 100%; }
+        nav a:hover { color: #FFF300; }
+
+        
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9); 
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+      
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #FFFF00; 
+            color: black;
+            font-weight: bold;
+            flex-shrink: 0; 
+        }
+
+        #custom-cursor {
+            width: 20px;
+            height: 20px;
+            background-color: rgba(0, 123, 255, 0.5); 
+            border: 2px solid #007bff;
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none; 
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            transition: transform 0.1s ease-out;
+        }
+    </style>
+</head>
+<body>
+
+<div class="site-wrapper">
+    <header>
+        <h1>
+            <img src="image/JB Explorer (1).png" alt="Logo">
+            <span>Welcome to My Hometown</span>
+        </h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="pg2.html">About JB</a>
+            <a href="pg3.html">Must-Visit Place</a>
+            <a href="Pg4.html">Local Food</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <h2 style="font-size: 36px; color: #FFFF00; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); font-family: Cambria, serif;">About JB</h2>
+        </section>
+
+        <section class="content">
+            <div class="card">
+                <img src="image/JBview.jpg" alt="JB View">
+                <p style="text-align: justify; color: #000000;">
+                    Johor Bahru, often known as JB, is a vibrant city located at the southern tip of Malaysia. As the gateway to Singapore, it is a dynamic blend of modern development and rich cultural heritage. 🌆🛍️
+                </p>
+                <p style="color: #000000; text-align: left;">Known for its diverse food scene, Johor Bahru has become a paradise for food lovers.🍴🤤</p>
+            </div>
+
+            <div class="card">
+                <img src="image/desaru.jpg" alt="Desaru">
+                <p style="text-align: left; color: #000000;">
+                    Beyond the city, Johor also offers a refreshing coastal escape at Desaru. Known for its long stretches of sandy beaches and peaceful atmosphere. 🌊🌴
+                </p>
+            </div>   
+        </main>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Hometown</p>
+    </footer>
+</div>
+
+<div id="custom-cursor"></div>
+
+<script>
+    const cursor = document.getElementById('custom-cursor');
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+    });
+</script>
+
+</body>
+</html>

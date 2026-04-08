@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4WBYVD0HPC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4WBYVD0HPC');
+</script>
+    <link rel="icon" type="image/x-icon" href="image/jblogo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JB Explorer - Local Food</title>
+       
+</head>
+
+<body onLoad="MM_preloadImages('image/laksa2.jpg','image/kuey2.jpg','image/cake2.jpg')">
+
+<div class="site-wrapper">
+    <header>
+        <h1>
+            <img src="image/JB Explorer (1).png" alt="Logo" width="100" style="margin-right: 20px;">
+            <span style="color: #FF0004; font-size: 36px;">Welcome to My Hometown</span>
+        </h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="pg2.html">About JB</a>
+            <a href="pg3.html">Must-Visit Place</a>
+            <a href="Pg4.html">Local Food</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="main-title">Local Food</h1>
+        
+        <div class="card-list">
+            <div class="card">
+                <a href="https://maps.app.goo.gl/vSLV9K7uuJpXVDnY6">
+                    <img src="image/laksa.jpg" alt="Laksa Johor">
+                </a>
+                <div class="card-content">
+                    <h2>Laksa Johor</h2>
+                    <p>Known for its rich and aromatic gravy made with ikan parang, served with spaghetti and fresh herbs. A true Johor pride!</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="https://maps.app.goo.gl/cMbStHJF6ceT9nZM7">
+                    <img src="image/kuey.jpg" alt="Kway Teow Kia">
+                </a>
+                <div class="card-content">
+                    <h2>Kway Teow Kia</h2>
+                    <p>A comforting local dish made with flat rice noodles in a light herbal broth, typically served with various braised items.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="https://maps.app.goo.gl/BsGdFhTfT2abaxki9">
+                    <img src="image/cake.jpeg" alt="Hiap Joo Bakery">
+                </a>
+                <div class="card-content">
+                    <h2>Hiap Joo Bakery</h2>
+                    <p>Beloved heritage bakery, famous for wood-fired banana cakes. Soft, fragrant, and worth the queue!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 My Hometown</p>
+</footer>
+<style>
+       
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+          
+            cursor: none !important;
+        }
+
+        body {
+            background: #f4f4f4 url('image/food.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .site-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+                header {
+            background-color: #000080;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            position: relative;
+            color: aqua;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: none !important;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            left: 0; bottom: -5px;
+            width: 0; height: 2px;
+            background: white;
+            transition: 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        nav a:hover {
+            color: #FFF300;
+        }
+
+        
+        .container {
+            max-width: 1200px; 
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .main-title {
+            color: #FFFF00;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .card-list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+            flex: 1;
+            min-width: 300px;
+            max-width: 350px;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            cursor: none !important;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .card-content h2 {
+            margin: 0 0 10px 0;
+            color: #000080;
+            font-size: 22px;
+        }
+
+        .card-content p {
+            color: #333;
+            line-height: 1.5;
+            font-size: 15px;
+        }
+
+        
+        #custom-cursor {
+            width: 20px;
+            height: 20px;
+            background-color: rgba(0, 123, 255, 0.5); 
+            border: 2px solid #007bff;
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none; 
+            z-index: 999999;
+            transform: translate(-50%, -50%);
+            transition: transform 0.1s ease-out;
+        }
+        footer {
+            background: #FFFF00;
+            color: black;
+            text-align: center;
+            padding: 20px 0;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function MM_preloadImages() { var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array(); var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++) if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}} }
+    </script>
+
+<div id="custom-cursor"></div>
+
+
+<script>
+    const cursor = document.getElementById('custom-cursor');
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+    });
+</script>
+
+</body>
+</html>
