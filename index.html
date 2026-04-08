@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4WBYVD0HPC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4WBYVD0HPC');
+</script>
+    <link rel="icon" type="image/x-icon" href="image/jblogo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JB Explorer - Home</title>
+    <body>
+
+	<div class="site-wrapper">
+    
+    <header>
+        <h1>
+            <img src="image/JB Explorer (1).png" alt="Logo" width="100" style="margin-right: 20px;">
+            <span style="color: #FF0004; font-size: 36px;">Welcome to My Hometown</span>
+        </h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="pg2.html">About JB</a>
+            <a href="pg3.html">Must-Visit Place</a>
+            <a href="Pg4.html">Local Food</a>
+        </nav>
+    </header>
+
+ 
+<div class="my-animation-container">
+    <span class="element flower f1"><img src="image/flower.jpg" width="30"></span>
+    <span class="element flower f2"><img src="image/flower.jpg" width="30"></span>
+    <span class="element flower f3"><img src="image/flower.jpg" width="30"></span>
+    
+   
+    <span class="element flag m1"><img src="image/flag.png" width="30"></span>
+    <span class="element flag m2"><img src="image/flag.png" width="30"></span>
+</div>
+
+<style>
+    /
+    .my-animation-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none; 
+        z-index: 9999;
+        overflow: hidden;
+    }
+
+    
+    .element {
+        position: absolute;
+        top: -50px;
+        opacity: 0;
+        filter: drop-shadow(0 2px 5px rgba(0,0,0,0.2));
+    }
+
+    .flower { font-size: 30px; }
+    .flag { font-size: 35px; }
+
+    
+    .f1 { left: 15%; animation: fall-and-swing 8s infinite linear; animation-delay: 0s; }
+    .f2 { left: 45%; animation: fall-and-swing 10s infinite linear; animation-delay: 3s; }
+    .f3 { left: 75%; animation: fall-and-swing 9s infinite linear; animation-delay: 6s; }
+    
+    .m1 { left: 30%; animation: fall-and-swing 12s infinite linear; animation-delay: 1s; }
+    .m2 { left: 85%; animation: fall-and-swing 11s infinite linear; animation-delay: 5s; }
+
+    
+    @keyframes fall-and-swing {
+        0% {
+            transform: translateY(0) translateX(0) rotate(0deg);
+            opacity: 0;
+        }
+        10% {
+            opacity: 0.8;
+        }
+        50% {
+            transform: translateY(50vh) translateX(50px) rotate(180deg);
+        }
+        90% {
+            opacity: 0.8;
+        }
+        100% {
+            transform: translateY(110vh) translateX(-50px) rotate(360deg);
+            opacity: 0;
+        }
+    }
+</style>
+
+    <section class="hero">
+        <h2>Discover the Beauty of Johor Bahru</h2>
+        <p><span style="color: #FFFF00">A place full of culture, food, and unforgettable experiences</span>.</p>
+        
+        <video width="1000" controls autoplay loop muted>
+            <source src="JB.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+			
+        </video>
+    </section>
+</div>
+
+
+<footer>
+    <p>&copy; 2026 My Hometown</p>
+</footer>
+</body>
+    <style>
+       
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            cursor: none !important; 
+        }
+
+        body {
+            background: #f4f4f4 url('image/JB.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .site-wrapper {
+            flex: 1; 
+            display: flex;
+            flex-direction: column;
+        }
+
+       
+        
+             header {
+             background: rgba(0, 0, 102, 0.7); /* 半透明蓝 */
+    backdrop-filter: blur(10px); /* 模糊背景，这行是关键 */
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            position: relative;
+            color: aqua;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: none !important;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            left: 0; bottom: -5px;
+            width: 0; height: 2px;
+            background: white;
+            transition: 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        nav a:hover {
+            color: #FFF300;
+        }
+
+       
+        .hero {
+            flex: 1; 
+            text-align: center;
+            padding: 60px 20px;
+            color: #FF0000;
+            font-family: Cambria, serif;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            color: #FFFF00;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        
+        video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-top: 20px;
+        }
+
+        
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #FFFF00;
+            color: black;
+            font-weight: bold;
+            flex-shrink: 0; 
+        }
+
+       
+        #custom-cursor {
+            width: 20px;
+            height: 20px;
+            background-color: rgba(0, 123, 255, 0.5); 
+            border: 2px solid #007bff;
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none; 
+            z-index: 999999;
+            transform: translate(-50%, -50%);
+            transition: transform 0.1s ease-out;
+        }
+		
+    </style>
+</head>
+
+
+<div id="custom-cursor"></div>
+
+<script>
+    const cursor = document.getElementById('custom-cursor');
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+    });
+</script>
+
+
+</html>
